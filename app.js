@@ -6,7 +6,7 @@ const db = require('./db')
 const app = express()
 const PORT = 3000
 
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'page')))
 app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
